@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yaramala Sai Sandeep Reddy — Future Data Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cal+Sans&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SSR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#roadmap">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's connect</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#roadmap" class="mob-link">Journey</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Aurora canvas -->
+    <canvas id="auroraCanvas"></canvas>
+
+    <!-- Floating blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Particle field -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content" id="heroContent">
+      <div class="hero-badge reveal-fade">
+        <span class="badge-dot"></span>
+        Open to Internships &amp; Opportunities
+      </div>
+
+      <h1 class="hero-name" id="heroName">
+        <span class="name-line" data-text="Yaramala Sai">Yaramala Sai</span>
+        <span class="name-line accent-gradient" data-text="Sandeep Reddy">Sandeep Reddy</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-prefix">I build&nbsp;</span>
+        <span class="role-cycle" id="roleCycle">
+          <span class="role-word active">Data Pipelines</span>
+          <span class="role-word">Full-Stack Apps</span>
+          <span class="role-word">ML Systems</span>
+          <span class="role-word">Scalable APIs</span>
+        </span>
+      </div>
+
+      <p class="hero-intro reveal-fade">
+        Computer Science undergrad at <em>Woxsen University</em> crafting intelligent software at the intersection of data engineering, machine learning, and product thinking.
+      </p>
+
+      <div class="hero-actions reveal-fade">
+        <a href="#projects" class="btn-primary">
+          <span>Explore Work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero-chips reveal-fade">
+        <span class="chip">Python</span>
+        <span class="chip">SQL</span>
+        <span class="chip">React</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">AWS</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT
+  ════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-heading reveal-up">
+            Turning curiosity into<br/><span class="accent-gradient">systems that matter</span>
+          </h2>
+          <div class="about-story reveal-up">
+            <p>
+              I started writing code not because I had to — but because I couldn't stop asking <em>"how does this actually work?"</em> That obsession drove me from simple scripts to federated learning systems distributed across banks, real-time platforms handling thousands of users, and tools that extract meaning from raw data.
+            </p>
+            <p>
+              At Woxsen University, I've maintained a <strong>CGPA of 8.97</strong> while going far beyond the curriculum — building production-grade projects, solving 150+ DSA problems, and collecting certifications from Google, IBM, and Duke University.
+            </p>
+            <p>
+              My north star is <strong>Data Engineering</strong>: designing pipelines that never break, warehouses that scale, and models that actually work in the real world — not just on notebooks. I believe great engineers don't just write code. They craft systems that outlive them.
+            </p>
+          </div>
+
+          <div class="about-tags reveal-up">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Systems Thinker</span>
+            <span class="tag">Data Enthusiast</span>
+            <span class="tag">Continuous Learner</span>
+          </div>
+        </div>
+
+        <div class="about-right reveal-up">
+          <div class="about-card glass">
+            <div class="card-glow"></div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-num" data-target="8.97" data-decimal="2">0</span>
+                <span class="stat-unit">/ 10</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="150" data-suffix="+">0</span>
+                <span class="stat-label">DSA Problems</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="4" data-suffix="+">0</span>
+                <span class="stat-label">Major Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="5" data-suffix="+">0</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-edu glass">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <strong>Woxsen University</strong>
+              <span>B.Tech CSE · 2023 – 2027</span>
+              <span class="edu-loc">Hyderabad, India</span>
+            </div>
+          </div>
+
+          <div class="about-langs glass">
+            <span class="lang-label">Languages</span>
+            <div class="lang-pills">
+              <span>English</span>
+              <span>Telugu</span>
+              <span>Hindi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SKILLS
+  ════════════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-heading reveal-up">
+        A full-stack mind with<br/><span class="accent-gradient">data at its core</span>
+      </h2>
+      <p class="section-sub reveal-up">Every technology I've chosen solves a real problem I've encountered — not just a checkbox on a list.</p>
+
+      <div class="skills-tabs reveal-up">
+        <button class="tab-btn active" data-tab="programming">Programming</button>
+        <button class="tab-btn" data-tab="web">Web Dev</button>
+        <button class="tab-btn" data-tab="data">Data & ML</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+      </div>
+
+      <div class="skills-panels">
+
+        <div class="skills-panel active" id="tab-programming">
+          <div class="skill-grid">
+            <div class="skill-orb">
+              <div class="orb-ring"></div>
+              <div class="orb-icon">🐍</div>
+              <span>Python</span>
+              <div class="orb-bar"><div class="orb-fill" style="--pct:92%"></div></div>
+            </div>
+            <div class="skill-orb">
+              <div class="orb-ring"></div>
+              <div class="orb-icon">☕</div>
+              <span>Java</span>
+              <div class="orb-bar"><div class="orb-fill" style="--pct:75%"></div></div>
+            </div>
+            <div class="skill-orb">
+              <div class="orb-ring"></div>
+              <div class="orb-icon">⚡</div>
+              <span>JavaScript</span>
+              <div class="orb-bar"><div class="orb-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-orb">
+              <div class="orb-ring"></div>
+              <div class="orb-icon">🗄️</div>
+              <span>SQL</span>
+              <div class="orb-bar"><div class="orb-fill" style="--pct:88%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-panel" id="tab-web">
+          <div class="skill-grid">
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">⚛️</div><span>React.js</span><div class="orb-bar"><div class="orb-fill" style="--pct:83%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🟢</div><span>Node.js</span><div class="orb-bar"><div class="orb-fill" style="--pct:78%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🎨</div><span>Tailwind CSS</span><div class="orb-bar"><div class="orb-fill" style="--pct:87%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🔌</div><span>REST APIs</span><div class="orb-bar"><div class="orb-fill" style="--pct:80%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🚂</div><span>Express.js</span><div class="orb-bar"><div class="orb-fill" style="--pct:76%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🌐</div><span>HTML5 / CSS3</span><div class="orb-bar"><div class="orb-fill" style="--pct:91%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel" id="tab-data">
+          <div class="skill-grid">
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🧠</div><span>TensorFlow</span><div class="orb-bar"><div class="orb-fill" style="--pct:78%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">📊</div><span>Scikit-Learn</span><div class="orb-bar"><div class="orb-fill" style="--pct:82%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🔒</div><span>Federated Learning</span><div class="orb-bar"><div class="orb-fill" style="--pct:70%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🐼</div><span>Pandas / NumPy</span><div class="orb-bar"><div class="orb-fill" style="--pct:85%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🗃️</div><span>MySQL / MongoDB</span><div class="orb-bar"><div class="orb-fill" style="--pct:84%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">📈</div><span>Data Analytics</span><div class="orb-bar"><div class="orb-fill" style="--pct:80%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills-panel" id="tab-tools">
+          <div class="skill-grid">
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🐙</div><span>Git</span><div class="orb-bar"><div class="orb-fill" style="--pct:86%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">🐳</div><span>Docker</span><div class="orb-bar"><div class="orb-fill" style="--pct:72%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">☁️</div><span>AWS EC2</span><div class="orb-bar"><div class="orb-fill" style="--pct:68%"></div></div></div>
+            <div class="skill-orb"><div class="orb-ring"></div><div class="orb-icon">📓</div><span>Jupyter</span><div class="orb-bar"><div class="orb-fill" style="--pct:88%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">Selected Work</div>
+      <h2 class="section-heading reveal-up">
+        Projects built to<br/><span class="accent-gradient">solve real problems</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass reveal-up" data-index="01">
+          <div class="project-card-glow"></div>
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-period">Dec 2024 – Mar 2025</span>
+          </div>
+          <h3 class="project-title">Privacy-Preserving Fraud Detection</h3>
+          <p class="project-tagline">Banking · Federated Learning · Neural Networks</p>
+          <p class="project-desc">
+            Designed a secure fraud detection framework where multiple banks collaboratively train neural networks without ever sharing raw transaction data — privacy by architecture, not by policy.
+          </p>
+          <ul class="project-highlights">
+            <li>Decentralized training via <strong>FLWR + FedAvg</strong> protocol</li>
+            <li>Neural network models with <strong>SQL-driven</strong> transaction analysis</li>
+            <li>Rigorous validation pipeline improving model robustness</li>
+          </ul>
+          <div class="project-stack">
+            <span>Python</span><span>TensorFlow</span><span>FLWR</span><span>Pandas</span><span>Scikit-Learn</span><span>SQL</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass reveal-up" data-index="02">
+          <div class="project-card-glow"></div>
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-period">Jul 2025 – Nov 2025</span>
+          </div>
+          <h3 class="project-title">Fake Product Detector</h3>
+          <p class="project-tagline">E-Commerce · Computer Vision · ML Classification</p>
+          <p class="project-desc">
+            Built a counterfeit detection engine that scrapes e-commerce listings, fuses image and text signals through ML classifiers, and surfaces anomalies with SQL-powered analytics dashboards.
+          </p>
+          <ul class="project-highlights">
+            <li>Multi-modal analysis: <strong>image + text</strong> fusion pipeline</li>
+            <li>Automated data extraction via <strong>BeautifulSoup</strong> scrapers</li>
+            <li>Containerized with <strong>Docker</strong> for production deployment</li>
+          </ul>
+          <div class="project-stack">
+            <span>React</span><span>Python</span><span>Flask</span><span>TensorFlow</span><span>Docker</span><span>BeautifulSoup</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass reveal-up" data-index="03">
+          <div class="project-card-glow"></div>
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span class="project-period">Jul 2025 – Nov 2025</span>
+          </div>
+          <h3 class="project-title">Real-Time Messaging Platform</h3>
+          <p class="project-tagline">Infrastructure · WebSockets · Cloud</p>
+          <p class="project-desc">
+            Engineered a chat platform from scratch capable of sustaining 5,000+ concurrent connections — with concurrency-tested architecture deployed on AWS EC2 and low-latency WebSocket communication.
+          </p>
+          <ul class="project-highlights">
+            <li>Sub-100ms messaging via <strong>Socket.IO</strong> event architecture</li>
+            <li>Concurrency load-tested to <strong>5,000+ simultaneous users</strong></li>
+            <li>Full system documentation and QA test plans written</li>
+          </ul>
+          <div class="project-stack">
+            <span>Node.js</span><span>Express.js</span><span>React.js</span><span>Socket.IO</span><span>AWS EC2</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass reveal-up" data-index="04">
+          <div class="project-card-glow"></div>
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <span class="project-period">Dec 2025 – Mar 2026</span>
+          </div>
+          <h3 class="project-title">Intelligent Data Extraction Tool</h3>
+          <p class="project-tagline">Data Engineering · ETL · Visualization</p>
+          <p class="project-desc">
+            A web-based ETL platform that ingests messy raw data, transforms it through SQL pipelines, and presents it through interactive dashboards — bridging the gap between raw information and actionable insight.
+          </p>
+          <ul class="project-highlights">
+            <li>End-to-end <strong>ETL pipeline</strong> with SQL transformation logic</li>
+            <li>Interactive visualization built with <strong>ShadCN UI + React</strong></li>
+            <li>Structured export formats with validation and reporting</li>
+          </ul>
+          <div class="project-stack">
+            <span>React</span><span>Vite</span><span>JavaScript</span><span>Tailwind</span><span>ShadCN</span><span>Node.js</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CAREER ROADMAP
+  ════════════════════════════════════ -->
+  <section class="roadmap section" id="roadmap">
+    <div class="container">
+      <div class="section-label">Journey</div>
+      <h2 class="section-heading reveal-up">
+        Every milestone is a<br/><span class="accent-gradient">stepping stone forward</span>
+      </h2>
+
+      <div class="roadmap-timeline">
+
+        <div class="timeline-item done reveal-left">
+          <div class="tl-connector">
+            <div class="tl-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass">
+            <span class="tl-phase">Phase I · Foundations</span>
+            <h3>Python &amp; Web Fundamentals</h3>
+            <p>Built the core — Python scripting, HTML/CSS, JavaScript, database concepts, and the first full-stack apps.</p>
+            <div class="tl-tags"><span>Python</span><span>HTML/CSS</span><span>JavaScript</span><span>MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item done reveal-right">
+          <div class="tl-connector">
+            <div class="tl-dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass">
+            <span class="tl-phase">Phase II · Specialization</span>
+            <h3>Machine Learning &amp; Full-Stack</h3>
+            <p>Federated learning, neural networks, React front-ends, Node.js APIs, and real-world project delivery.</p>
+            <div class="tl-tags"><span>TensorFlow</span><span>React</span><span>Node.js</span><span>FLWR</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item active reveal-left">
+          <div class="tl-connector">
+            <div class="tl-dot pulse-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass active-card">
+            <span class="tl-phase">Phase III · Current Focus</span>
+            <h3>DSA · SQL Mastery · System Design</h3>
+            <p>Strengthening algorithmic thinking, advanced SQL patterns, and learning to design systems at scale.</p>
+            <div class="tl-tags"><span>DSA</span><span>Advanced SQL</span><span>System Design</span><span>Docker</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item future reveal-right">
+          <div class="tl-connector">
+            <div class="tl-dot future-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass">
+            <span class="tl-phase">Phase IV · Engineering</span>
+            <h3>Data Engineering at Scale</h3>
+            <p>Apache Spark, Airflow, data warehousing (Snowflake / BigQuery), and cloud-native ETL architectures.</p>
+            <div class="tl-tags"><span>Apache Spark</span><span>Airflow</span><span>Snowflake</span><span>AWS</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item future reveal-left">
+          <div class="tl-connector">
+            <div class="tl-dot future-dot"></div>
+          </div>
+          <div class="tl-card glass">
+            <span class="tl-phase">Phase V · Frontier</span>
+            <h3>GenAI &amp; Intelligent Systems</h3>
+            <p>LLM-powered data products, vector databases, Retrieval-Augmented Generation, and AI-first engineering at top-tier companies.</p>
+            <div class="tl-tags"><span>LLMs</span><span>RAG</span><span>Vector DBs</span><span>GCP</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CERTIFICATIONS
+  ════════════════════════════════════ -->
+  <section class="certs section" id="certs">
+    <div class="container">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-heading reveal-up">
+        Verified by the<br/><span class="accent-gradient">world's best institutions</span>
+      </h2>
+      <div class="certs-row">
+        <div class="cert-badge glass reveal-up">
+          <div class="cert-icon">🦉</div>
+          <div class="cert-info">
+            <strong>Duke University</strong>
+            <span>Programming Foundations<br/>JavaScript, HTML &amp; CSS</span>
+          </div>
+        </div>
+        <div class="cert-badge glass reveal-up">
+          <div class="cert-icon">🔵</div>
+          <div class="cert-info">
+            <strong>Google</strong>
+            <span>Professional Certification</span>
+          </div>
+        </div>
+        <div class="cert-badge glass reveal-up">
+          <div class="cert-icon">🏔️</div>
+          <div class="cert-info">
+            <strong>University of Colorado</strong>
+            <span>System Certification</span>
+          </div>
+        </div>
+        <div class="cert-badge glass reveal-up">
+          <div class="cert-icon">🧩</div>
+          <div class="cert-info">
+            <strong>LearnQuest</strong>
+            <span>Technical Certification</span>
+          </div>
+        </div>
+        <div class="cert-badge glass reveal-up">
+          <div class="cert-icon">💎</div>
+          <div class="cert-info">
+            <strong>IBM</strong>
+            <span>Professional Certificate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT
+  ════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner glass">
+        <div class="contact-glow"></div>
+        <div class="section-label">Contact</div>
+        <h2 class="contact-heading reveal-up">
+          Let's build something<br/><span class="accent-gradient">extraordinary together</span>
+        </h2>
+        <p class="contact-sub reveal-up">
+          I'm actively seeking internships and graduate roles in Software Engineering, Data Engineering, and Machine Learning. If you're working on something interesting — I want to hear about it.
+        </p>
+
+        <div class="contact-links reveal-up">
+          <a href="mailto:saisandeep.yaramala_2027@woxsen.edu.in" class="contact-card glass">
+            <div class="cc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+            </div>
+            <div class="cc-text">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">saisandeep.yaramala_2027<br/>@woxsen.edu.in</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sai-sandeep-reddy-yaramala-681393305" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+            <div class="cc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="cc-text">
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">sai-sandeep-reddy-yaramala</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/YaramalaSaiSandeepreddy" target="_blank" rel="noopener noreferrer" class="contact-card glass">
+            <div class="cc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="cc-text">
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">YaramalaSaiSandeepreddy</span>
+            </div>
+          </a>
+
+          <div class="contact-card glass no-link">
+            <div class="cc-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="cc-text">
+              <span class="cc-label">Location</span>
+              <span class="cc-value">India · Available Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-status reveal-up">
+          <span class="status-dot"></span>
+          Currently available for internships starting <strong>2025 / 2026</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">SSR<span class="dot">.</span></span>
+          <span class="footer-name">Yaramala Sai Sandeep Reddy</span>
+        </div>
+        <div class="footer-badge">
+          <span class="badge-dot"></span>
+          Open to Opportunities
+        </div>
+        <div class="footer-right">
+          <span>Woxsen University · B.Tech CSE · 2027</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Crafted with intent · © 2025 Yaramala Sai Sandeep Reddy</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
